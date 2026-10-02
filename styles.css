@@ -79,7 +79,7 @@ button {
         rgba(2,18,32,0.95),
         rgba(2,18,32,0.35)
     ),
-    url("tarpon-soft/hero-background.png");
+    url("/tarpon-soft/hero-background.png");
 
     background-size: cover;
 
