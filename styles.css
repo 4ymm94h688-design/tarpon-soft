@@ -1,40 +1,325 @@
 * {
-box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 body {
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#041827;
-color:white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #031727;
+    color: white;
 }
+
+
+/* HEADER */
 
 header {
-height:90px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:0 6%;
-background:#061d32;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background: rgba(3,23,39,0.95);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
-.brand {
-font-size:24px;
-font-weight:bold;
-letter-spacing:3px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.brand span {
-font-size:12px;
-color:#5ddcff;
+.logo h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 3px;
 }
+
+.logo p {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #59d9ff;
+}
+
 
 nav a {
-color:white;
-text-decoration:none;
-margin-left:25px;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 17px;
 }
 
+
+button {
+    background: #e6bb62;
+    color: #061827;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+/* HERO */
+
+.hero {
+
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 5%;
+
+    background-image:
+    linear-gradient(
+        90deg,
+        rgba(2,18,32,0.95),
+        rgba(2,18,32,0.35)
+    ),
+    url("images/hero-background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+
+.copy {
+
+    width: 45%;
+
+}
+
+
+
+.gold {
+
+    color: #e6bb62;
+
+    letter-spacing: 4px;
+
+    font-size: 15px;
+
+}
+
+
+
+h2 {
+
+    font-size: 65px;
+
+    line-height: 1.05;
+
+    margin: 25px 0;
+
+}
+
+
+
+h2 span {
+
+    font-weight: 300;
+
+}
+
+
+
+.copy p {
+
+    font-size: 21px;
+
+    line-height: 1.5;
+
+}
+
+
+
+.outline {
+
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid white;
+
+    margin-left: 15px;
+
+}
+
+
+
+/* DEVICES */
+
+
+.devices {
+
+    width: 55%;
+
+    height: 560px;
+
+    position: relative;
+
+}
+
+
+
+.ipad {
+
+    position: absolute;
+
+    width: 90%;
+
+    right: 0;
+
+    top: 20px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 30px 60px black;
+
+}
+
+
+
+.iphone {
+
+    position: absolute;
+
+    width: 180px;
+
+    left: 20px;
+
+    bottom: 0;
+
+    border-radius: 25px;
+
+    box-shadow: 0 20px 50px black;
+
+}
+
+
+
+/* FEATURES */
+
+
+.features {
+
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr);
+
+    gap: 25px;
+
+    padding: 60px 5%;
+
+    background: #061d31;
+
+}
+
+
+
+.features div {
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+
+.features h3 {
+
+    color:#e6bb62;
+
+    font-size:20px;
+
+}
+
+
+
+.features p {
+
+    line-height:1.5;
+
+    color:#d9e5ed;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:1000px) {
+
+
+header {
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+
+nav {
+
+    margin-top:20px;
+
+}
+
+
+
+.hero {
+
+    display:block;
+
+}
+
+
+
+.copy,
+.devices {
+
+    width:100%;
+
+}
+
+
+
+h2 {
+
+    font-size:45px;
+
+}
+
+
+
+.devices {
+
+    height:450px;
+
+}
+
+
+
+.features {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}
 
 .hero {
 min-height:650px;
